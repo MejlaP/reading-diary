@@ -1,0 +1,24 @@
+{% extends 'base.html' %}
+
+{% block body %}
+<h1>Nový záznam</h1>
+<hr>
+<h2>Vložit nový záznam</h2>
+
+
+<form action="/books/new" method="POST">
+    Název: <input type="text" name="title" id="title">
+    <br>
+    Autor: <input type="text" name="author" id="author">
+    <br>
+    Stručný obsah: <input type="text" name="content" id="content">
+    <br>
+    Počet stran: <input type="number" name="number_of_pages" id="number_of_pages">
+    <br>
+    ISBN (nepovinné): <input type="text" name="isbn" id="isbn">
+    <br>
+    <input type="submit" value="Uložit knihu">
+</form>
+<hr>
+
+{% endblock %}

@@ -1,0 +1,13 @@
+{% extends 'base.html' %}
+
+
+{% block body %}
+<h1>Čtenářský deník</h1>
+<p class="description">Tato aplikace slouží jako čtenářský deník a můžeme jejím prostřednictvím:</p>
+<ul class="functions">
+    <li><a href="{{ url_for('new') }}">Zadávat nové knihy</a></li>
+    <li><a href="{{ url_for('books') }}">Prohlížet seznam již přečtených knih</a></li>
+    <li><a href="{{ url_for('books') }}">Upravovat (smazat) knihu v seznamu</a></li>
+</ul>
+{% endblock %}
+

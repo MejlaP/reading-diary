@@ -1,0 +1,21 @@
+{% extends 'base.html' %}
+
+{% block body %}
+<h1>Úprava záznamu</h1>
+<hr>
+<h2>Upravit záznam</h2>
+<form action="/books/edit/{{template_book.id}}" method="POST">
+    Název: <input type="text" name="title" id="title" value="{{template_book.title}}">
+    <br>
+    Autor: <input type="text" name="author" id="author" value="{{template_book.author}}">
+    <br>
+    Stručný obsah: <input type="text" name="content" id="content" value="{{template_book.content}}">
+    <br>
+    Počet stran: <input type="number" name="number_of_pages" id="number_of_pages" value="{{template_book.number_of_pages}}">
+    <br>
+    ISBN (nepovinné): <input type="text" name="isbn" id="isbn" value="{{template_book.isbn}}">
+    <br>
+    <input type="submit" value="Uložit">
+</form>
+<hr>
+{% endblock %}
