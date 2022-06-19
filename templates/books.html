@@ -3,21 +3,22 @@
 
 {% block body %}
 <h1>Seznam přečtených knih</h1>
-<hr>
 {% for book in template_books %}
-    <h3>{{ book.id }}</h3>
-    <h3>{{ book.title }}</h3>
-    <h4>{{ book.author }}</h4>
-    <h4>{{ book.content }}</h4>
-    <h4>{{ book.number_of_pages }}</h4>
+    <h3>ID: {{ book.id }}</h3>
+    <h3>Název: {{ book.title }}</h3>
+    <h4>Autor: {{ book.author }}</h4>
+    <h5>Zadáno dne: {{ book.input_date }}</h5>
+    <h5 class="content-desription">Stručný obsah:</h5>
+    <p class="content-paragraph">{{ book.content }}</p>
+    <h5>Počet stran: {{ book.number_of_pages }}</h5>
     {% if book.isbn %}
         <h5>ISBN: {{ book.isbn }} </h5>
     {% else %}
         <h5>ISBN: - </h5>
     {% endif %}
-    <a href="/books/delete/{{book.id}}">Smazat</a>
-    <a href="/books/edit/{{book.id}}">Upravit</a>
-    <hr>
+    <a href="/books/delete/{{book.id}}"><button>Smazat</button></a>
+    <a href="/books/edit/{{book.id}}"><button>Upravit</button></a>
+    <hr class="book">
 {% endfor %}
 
 {% endblock %}

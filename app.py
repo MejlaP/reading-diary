@@ -15,7 +15,7 @@ class MyBook(db.Model):
     author = db.Column(db.String(128), nullable=False)
     content = db.Column(db.Text, nullable=False)
     number_of_pages = db.Column(db.Integer, nullable=False)
-    isbn = db.Column(db.String(128), nullable=False, default="-")
+    isbn = db.Column(db.String(128))
     input_date = db.Column(db.String(32), nullable=False, default=date.today)
 
 

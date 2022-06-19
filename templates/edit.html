@@ -2,7 +2,6 @@
 
 {% block body %}
 <h1>Úprava záznamu</h1>
-<hr>
 <h2>Upravit záznam</h2>
 <form action="/books/edit/{{template_book.id}}" method="POST">
     Název: <input type="text" name="title" id="title" value="{{template_book.title}}">
@@ -17,5 +16,5 @@
     <br>
     <input type="submit" value="Uložit">
 </form>
-<hr>
+
 {% endblock %}
