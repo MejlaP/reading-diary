@@ -95,7 +95,7 @@ nav li a {
 
 li a:hover {
     background-color: lightcyan;
-    font-weight: bold;
+    text-shadow: 0 0.015em #101010, 0 -0.015em #101010, 0.01em 0 #101010, -0.01em 0 #101010;
 }
 
 hr {
