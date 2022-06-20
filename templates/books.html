@@ -16,8 +16,8 @@
     {% else %}
         <h5>ISBN: - </h5>
     {% endif %}
-    <a href="/books/delete/{{book.id}}"><button>Smazat</button></a>
-    <a href="/books/edit/{{book.id}}"><button>Upravit</button></a>
+    <a href="/books/edit/{{book.id}}"><button id="edit-button">Upravit</button></a>
+    <a href="/books/delete/{{book.id}}"><button id="delete-button">Smazat</button></a>
     <hr class="book">
 {% endfor %}
 

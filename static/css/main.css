@@ -55,14 +55,15 @@ table {
 
 /* --------------------------------------------- */
 
+/**MY CSS */
 html, body {
     height: 100%;
 }
 
 body {
-    font-family: 'Roboto', sans-serif;
     color: black;
-    margin-left: 30px;
+    font-family: 'Roboto', sans-serif;
+    margin-left: 3rem;
     max-width: 700px;
 }
 
@@ -77,14 +78,14 @@ nav {
 }
 
 nav ul {
-    list-style-type: none;
     display: flex;
     justify-content: space-between;
+    list-style-type: none;
 }
 
 li a {
-    display: block;
     color: black;
+    display: block;
     text-decoration: none;
 }
 
@@ -93,20 +94,7 @@ nav li a {
 }
 
 li a:hover {
-    background-color: lightcyan
-}
-
-h1 {
-    font-size: 3rem;
-    margin: 1.88rem 0 1.88rem 0;
-}
-
-.description {
-    margin-bottom: 1.25rem
-}
-
-.functions {
-    line-height: 1.88rem;
+    background-color: lightcyan;
     font-weight: bold;
 }
 
@@ -114,24 +102,44 @@ hr {
     border: 1px dashed blue
 }
 
-h3 {
-    font-size: 1.17rem;
-    margin-top: 0.5rem;
-    margin-bottom: 0.5rem;
+h1 {
+    font-size: 3rem;
+    margin: 1.88rem 0 1.88rem 0;
+}
+
+h2 {
+    font-size: 1.5rem;
+    margin-bottom: 0.3rem;
+}
+
+h3, h4, h5 {
     font-weight: bold;
 }
 
+h3 {
+    font-size: 1.17rem;
+    margin-bottom: 0.5rem;
+    margin-top: 0.5rem;
+}
+
 h4 {
-    margin-top: 0.9rem;
     margin-bottom: 0.8rem;
-    font-weight: bold;
+    margin-top: 0.9rem;
 }
 
 h5 {
     font-size: .83rem;
-    margin-top: 0.8rem;
     margin-bottom: 1rem;
+    margin-top: 0.8rem;
+}
+
+.description {
+    margin-bottom: 1.25rem
+}
+
+.functions {
     font-weight: bold;
+    line-height: 1.88rem;
 }
 
 .content-desription {
@@ -144,4 +152,70 @@ h5 {
 
 .book {
     margin: 1.2rem 0 1.2rem 0;
+}
+
+.my-form label,
+.my-form input,
+.my-form textarea {
+    display: block;
+    font-size: 0.8rem
+}
+
+.my-form label,
+.my-form label {
+    padding: 0.7rem 0 0.1rem;
+    text-transform: uppercase;
+}
+
+.my-form input,
+.my-form textarea {
+    border: 1px solid black;
+    border-radius: 2px;
+    padding: 0.25rem;
+    width: 50%;
+}
+
+#send-btn {
+    background-color: lightgoldenrodyellow;
+    border: 1px solid black;
+    cursor: pointer;
+    font-weight: bold;
+    font-style: normal;
+    margin: 0.9rem 0;
+    padding: 0.5rem;
+    text-transform: uppercase;
+    width: auto;
+}
+
+#send-btn:hover {
+    background-color: lightcyan
+}
+
+.italic-inputs input,
+.italic-inputs textarea {
+    font-style: italic;
+}
+
+#delete-button,
+#edit-button {
+    border: 1px solid black;
+    font-weight: bold;
+    text-transform: uppercase;
+    width: 6rem;
+}
+
+#delete-button {
+    background-color: pink;
+}
+
+#delete-button:hover {
+    background-color: #f7786b;
+}
+
+#edit-button {
+    background-color: lightgreen;
+}
+
+#edit-button:hover {
+    background-color: greenyellow;
 }

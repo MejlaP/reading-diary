@@ -2,19 +2,19 @@
 
 {% block body %}
 <h1>Úprava záznamu</h1>
-<h2>Upravit záznam</h2>
-<form action="/books/edit/{{template_book.id}}" method="POST">
-    Název: <input type="text" name="title" id="title" value="{{template_book.title}}">
-    <br>
-    Autor: <input type="text" name="author" id="author" value="{{template_book.author}}">
-    <br>
-    Stručný obsah: <input type="text" name="content" id="content" value="{{template_book.content}}">
-    <br>
-    Počet stran: <input type="number" name="number_of_pages" id="number_of_pages" value="{{template_book.number_of_pages}}">
-    <br>
-    ISBN (nepovinné): <input type="text" name="isbn" id="isbn" value="{{template_book.isbn}}">
-    <br>
-    <input type="submit" value="Uložit">
+<h2>Upravit záznam o knize</h2>
+<form action="/books/edit/{{template_book.id}}" method="POST" class="my-form italic-inputs">
+    <label for="title">Název:</label>
+    <input type="text" name="title" id="title" value="{{template_book.title}}">
+    <label for="author">Autor:</label>
+    <input type="text" name="author" id="author" value="{{template_book.author}}">
+    <label for="content">Stručný obsah:</label>
+    <textarea name="content" id="content" rows="6">{{template_book.content}}</textarea>
+    <label for="number_of_pages">Počet stran:</label>
+    <input type="number" name="number_of_pages" id="number_of_pages" value="{{template_book.number_of_pages}}">
+    <label for="isbn">ISBN (nepovinné):</label>
+    <input type="text" name="isbn" id="isbn" value="{{template_book.isbn}}">
+    <input type="submit" value="Uložit změny" id="send-btn">
 </form>
 
 {% endblock %}

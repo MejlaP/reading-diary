@@ -2,22 +2,19 @@
 
 {% block body %}
 <h1>Nový záznam</h1>
-<h2>Vložit nový záznam</h2>
-
-
-<form action="/books/new" method="POST">
-    Název: <input type="text" name="title" id="title">
-    <br>
-    Autor: <input type="text" name="author" id="author">
-    <br>
-    Stručný obsah: <textarea rows = "5" name="content" id="content"></textarea>
-    <br>
-    Počet stran: <input type="number" name="number_of_pages" id="number_of_pages">
-    <br>
-    ISBN (nepovinné): <input type="text" name="isbn" id="isbn">
-    <br>
-    <input type="submit" value="Uložit knihu">
+<h2>Vložit novou knihu</h2>
+<form action="/books/new" method="POST" class="my-form">
+    <label for="title">Název:</label>
+    <input type="text" name="title" id="title">
+    <label for="author">Autor:</label>
+    <input type="text" name="author" id="author">
+    <label for="content">Stručný obsah:</label>
+    <textarea rows="6" name="content" id="content"></textarea>
+    <label for="number_of_pages">Počet stran:</label>
+    <input type="number" name="number_of_pages" id="number_of_pages">
+    <label for="isbn">ISBN (nepovinné):</label>
+    <input type="text" name="isbn" id="isbn">
+    <input type="submit" value="Uložit knihu" id="send-btn">
 </form>
-<hr>
 
 {% endblock %}

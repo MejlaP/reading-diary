@@ -28,7 +28,7 @@ def index():
 @app.route("/books")
 def books():
     my_books = MyBook.query.order_by(MyBook.id).all()
-    return render_template("books.html", template_books = my_books)
+    return render_template("books.html", template_books=my_books)
 
 
 @app.route("/books/new", methods=["GET", "POST"])
