@@ -10,3 +10,4 @@ Zadaná kniha se pak uloží do databáze (books.db).
 Z databáze pak uložené knihy zobrazujeme (v souboru books.html). Můžeme je odtud také smazat nebo upravit (v tom případě se proklikneme do editačního formuláře v souboru edit.html).
 V celé aplikaci se nachází v horní části navigační menu pro vstup do požadované sekce.
 
+![reading-diary](https://user-images.githubusercontent.com/90547920/183282934-2df605d6-64fb-4807-bd3b-06520f9eda24.png)
